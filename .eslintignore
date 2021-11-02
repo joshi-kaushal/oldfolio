@@ -1,0 +1,8 @@
+node_modules/
+.git
+build
+tailwind.config.js
+craco.config.js
+.eslintrc.json
+package.json
+package-lock.json
