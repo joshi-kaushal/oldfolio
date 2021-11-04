@@ -1,11 +1,13 @@
 import './App.css';
+import Header from './Components/Header';
+import Landing from './Components/Landing';
 
 function App() {
   return (
-    <div className="App ">
-      <h1>Hello World</h1>
-      <h2>Style Guide Test</h2>
-    </div>
+    <>
+      <Header />
+      <Landing />
+    </>
   );
 }
 export default App;
