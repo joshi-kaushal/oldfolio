@@ -18,6 +18,7 @@ const Header = () => {
       <div className="py-4 px-12">Contact</div>
     </div>
   );
+
   return (
     <nav className="bg-primary">
       <div className="mx-auto px-8">
@@ -30,11 +31,18 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <div className="hidden md:flex py-4 space-x-4 text-secondary text-xl items-center ">
+          <div className="hidden md:flex py-4 space-x-4 px-9 text-secondary text-xl items-center ">
             <div className="py-3 px-4">About</div>
             <div className="py-3 px-4">Projects</div>
             <div className="py-3 px-4">Blog</div>
-            <div className="py-3 pr-6">Contact</div>
+            <div
+              className="py-2 px-2 border rounded-3xl bg-secondary text-primary 
+                       hover:text-secondary hover:border-secondary hover:bg-primary transition duration-700"
+            >
+              <a href="#contact" className="p-2">
+                Contact
+              </a>
+            </div>
           </div>
 
           {/* Mobile View HamburgerMenu */}

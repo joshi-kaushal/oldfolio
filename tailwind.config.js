@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0A192F',
-        secondary: '#64FFDA',
+        primary: '#111111',
+        secondary: '#59E8D2',
         primaryf: '#CCD6F6',
         secondaryf: '#8892B0',
         transparent: 'transparent',
@@ -22,7 +22,8 @@ module.exports = {
         hashnode: '#2962FF',
         linkedin: '#0077B5',
         gmail: '#D44638',
-        github: '#181717'
+        github: '#181717',
+        javascript: '#F7DF1E'
       }
     }
   },
