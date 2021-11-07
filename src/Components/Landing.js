@@ -83,6 +83,27 @@ const Landing = () => {
               <SiGmail className="w-7 h-7 md:w-8 md:h-8 text-gmail" />
             </SocialLinkButton>
           </div>
+
+          {/* Contact */}
+          <div className="flex justify-start py-2 md:py-6">
+            <button
+              className="bg-white text-primary text-xl font-bold py-2 px-4 rounded-full hover:bg-secondary hover:text-primary transition-all duration-500"
+              type="button"
+            >
+              Contact Me
+            </button>
+            <button
+              className="bg-white text-primary text-xl font-bold py-2 px-4 mx-4 rounded-full hover:bg-secondary hover:text-primary transition-all duration-500"
+              type="button"
+              onClick={() => {
+                window.open(
+                  'https://drive.google.com/file/d/1lDCWRoVy6zzFh1OyNLeIiOn2yq3W-nj5/view?usp=sharing'
+                );
+              }}
+            >
+              Resume
+            </button>
+          </div>
         </div>
       </div>
     </div>
