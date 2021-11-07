@@ -2,6 +2,11 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
+
+/*
+ * TODO: Modify tailwind config js
+ * Landing page h-screen fix
+ */
 import React from 'react';
 import '../App.css';
 import { SiHashnode, SiLinkedin, SiGmail, SiGithub, SiTwitter } from 'react-icons/si';
@@ -20,7 +25,7 @@ const Landing = () => {
   );
 
   return (
-    <div className="bg-primary">
+    <div className="bg-primary h-screen flex flex-col place-content-center items-center md:pb-24">
       <div className="flex flex-wrap md:px-40 overflow-hidden items-center sm:-mx-1 md:-mx-1 lg:-mx-3 xl:-mx-3">
         {/* Column 01: Photo */}
         <div
@@ -44,7 +49,7 @@ const Landing = () => {
                           xl:my-3 xl:px-3 xl:w-1/2"
         >
           <h2 className="text-3xl font-bold text-white md:text-5xl">Hello 👋</h2>
-          <h1 className="text-5xl font-bold text-secondary md:text-7xl hover:text-javascript transition duration-500">
+          <h1 className="text-5xl font-bold text-secondary hover:text-skills-javascript md:text-7xl  transition duration-500">
             Kaushal Joshi{' '}
             <span className="text-2xl font-medium md:text-3xl text-white">here! </span>
           </h1>

@@ -11,11 +11,25 @@ const Header = () => {
   const handleHamburgerClick = () => setHamburgerClicked(!isHamburgerClicked);
 
   const renderMobileMenu = () => (
-    <div className={isHamburgerClicked ? 'text-secondary text-xl md:hidden' : 'hidden'}>
-      <div className="py-4 px-12">Projects</div>
-      <div className="py-4 px-12">About</div>
-      <div className="py-4 px-12">Blog</div>
-      <div className="py-4 px-12">Contact</div>
+    <div
+      className={
+        isHamburgerClicked
+          ? 'text-secondary text-xl md:hidden flex flex-col h-screen place-content-center items-center pb-32'
+          : 'hidden'
+      }
+    >
+      <div className="pb-10 mx-0 text-2xl font-semibold hover:underline transition duration-500">
+        Projects
+      </div>
+      <div className="py-10 mx-0 text-2xl font-semibold hover:underline transition duration-500">
+        About
+      </div>
+      <div className="py-10 mx-0 text-2xl font-semibold hover:underline transition duration-500">
+        Blog
+      </div>
+      <div className="py-10 mx-0 text-2xl font-semibold hover:underline transition duration-500">
+        Contact
+      </div>
     </div>
   );
 
