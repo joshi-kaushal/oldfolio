@@ -6,3 +6,4 @@ craco.config.js
 .eslintrc.json
 package.json
 package-lock.json
+index.css

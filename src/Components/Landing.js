@@ -48,7 +48,9 @@ const Landing = () => {
                           lg:my-3 lg:px-3 lg:w-1/2 
                           xl:my-3 xl:px-3 xl:w-1/2"
         >
-          <h2 className="text-3xl font-bold text-white md:text-5xl">Hello 👋</h2>
+          <h2 className="text-3xl font-bold text-white md:text-5xl">
+            Hello <span className="wave-emoji text-5xl">👋</span>
+          </h2>
           <h1 className="text-5xl font-bold text-secondary hover:text-skills-javascript md:text-7xl  transition duration-500">
             Kaushal Joshi{' '}
             <span className="text-2xl font-medium md:text-3xl text-white">here! </span>
