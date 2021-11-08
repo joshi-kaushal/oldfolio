@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -86,7 +87,7 @@ const Landing = () => {
 
           {/* Contact */}
           <div className="flex justify-start py-2 md:py-6">
-            <button
+            {/* <button
               className="bg-white text-primary text-xl font-bold py-2 px-4 rounded-full hover:bg-secondary hover:text-primary transition-all duration-500"
               type="button"
             >
@@ -102,6 +103,19 @@ const Landing = () => {
               }}
             >
               Resume
+            </button> */}
+            <button
+              className="learn-more"
+              onClick={() => {
+                window.open(
+                  'https://drive.google.com/file/d/1lDCWRoVy6zzFh1OyNLeIiOn2yq3W-nj5/view?usp=sharing'
+                );
+              }}
+            >
+              <span aria-hidden="true" className="circle">
+                <span className="icon arrow" />
+              </span>
+              <span className="button-text">Resume</span>
             </button>
           </div>
         </div>
