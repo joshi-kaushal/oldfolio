@@ -10,6 +10,7 @@ const Header = () => {
 
   const handleHamburgerClick = () => setHamburgerClicked(!isHamburgerClicked);
 
+  // Mobile view Hamburger Menu
   const renderMobileMenu = () => (
     <div
       className={
@@ -45,13 +46,27 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <div className="hidden md:flex py-4 space-x-4 px-9 text-secondary text-xl items-center ">
-            <div className="py-3 px-4">About</div>
-            <div className="py-3 px-4">Projects</div>
-            <div className="py-3 px-4">Blog</div>
+          <div className="sm:hidden md:flex py-4 space-x-4 px-9 text-secondary text-xl lg:align-middle ">
+            <div className="pt-3 pb-1 px-4">About</div>
+            <div className="pt-3 pb-1 px-4">Projects</div>
+            <div className="pt-3 pb-1 px-4">Blog</div>
             <div
-              className="py-2 px-2 border rounded-3xl bg-secondary text-primary 
-                       hover:text-secondary hover:border-secondary hover:bg-primary transition duration-700"
+              className=" text-primary
+                          bg-secondary
+                          border border-solid border-primary hover:border-secondary
+                          hover:bg-primary hover:text-secondary
+                          active:bg-secondary active:text-primary
+                          font-bold
+                          uppercase
+                          text-sm
+                          mr-1
+                          mb-1
+                          px-6
+                          py-3
+                          rounded-full
+                          ease-linear
+                          transition-all
+                          duration-150"
             >
               <a href="#contact" className="p-2">
                 Contact

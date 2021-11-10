@@ -27,7 +27,7 @@ const Landing = () => {
 
   return (
     <div className="bg-primary h-screen flex flex-col place-content-center items-center md:pb-24">
-      <div className="flex flex-wrap md:px-40 overflow-hidden items-center sm:-mx-1 md:-mx-1 lg:-mx-3 xl:-mx-3">
+      <div className="flex flex-wrap md:px-6 overflow-hidden items-center sm:-mx-1 md:-mx-1 lg:-mx-3 xl:-mx-3">
         {/* Column 01: Photo */}
         <div
           className="w-full overflow-hidden 
@@ -36,7 +36,7 @@ const Landing = () => {
                           lg:px-3 lg:w-1/2 xl:my-3
                           xl:px-3 xl:w-1/2"
         >
-          <div className="image pt-12 px-12">
+          <div className="image lg:pt-12 lg:px-12">
             <img src={Myself} alt="Jaushal Koshi😎" height="420px" width="420px" />
           </div>
         </div>
@@ -87,7 +87,7 @@ const Landing = () => {
 
           {/* Contact */}
           <div className="flex justify-start py-2 md:py-6">
-            {/* <button
+            <button
               className="bg-white text-primary text-xl font-bold py-2 px-4 rounded-full hover:bg-secondary hover:text-primary transition-all duration-500"
               type="button"
             >
@@ -103,19 +103,6 @@ const Landing = () => {
               }}
             >
               Resume
-            </button> */}
-            <button
-              className="learn-more"
-              onClick={() => {
-                window.open(
-                  'https://drive.google.com/file/d/1lDCWRoVy6zzFh1OyNLeIiOn2yq3W-nj5/view?usp=sharing'
-                );
-              }}
-            >
-              <span aria-hidden="true" className="circle">
-                <span className="icon arrow" />
-              </span>
-              <span className="button-text">Resume</span>
             </button>
           </div>
         </div>
