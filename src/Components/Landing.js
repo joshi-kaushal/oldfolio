@@ -37,7 +37,7 @@ const Landing = () => {
                           xl:px-3 xl:w-1/2"
         >
           <div className="image lg:pt-12 lg:px-12">
-            <img src={Myself} alt="Jaushal Koshi😎" height="420px" width="420px" />
+            <img className="h-60 w-60 mx-auto lg:h-96 lg:w-96" src={Myself} alt="Jaushal Koshi😎" />
           </div>
         </div>
 
@@ -56,7 +56,9 @@ const Landing = () => {
             Kaushal Joshi{' '}
             <span className="text-2xl font-medium md:text-3xl text-white">here! </span>
           </h1>
-          <h2 className="text-2xl pt-6 font-mono text-white md:text-3xl">Full Stack Developer</h2>
+          <h2 className="text-center md:text-left text-2xl pt-6 font-mono text-white md:text-3xl">
+            clumsycoder
+          </h2>
           <p className="py-3 text-center text-xl text-white  md:text-left">
             I am a Computer Science Junior at Mumbai University, interested in web, cloud, design
             and cinema.

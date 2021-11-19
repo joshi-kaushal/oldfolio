@@ -46,10 +46,10 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <div className="sm:hidden md:flex py-4 space-x-4 px-9 text-secondary text-xl lg:align-middle ">
-            <div className="pt-3 pb-1 px-4">About</div>
-            <div className="pt-3 pb-1 px-4">Projects</div>
-            <div className="pt-3 pb-1 px-4">Blog</div>
+          <div className="hidden lg:flex py-4 space-x-4 px-9 text-secondary text-xl align-middle">
+            <div className="pt-3 pb-1 px-4 af ">About</div>
+            <div className="pt-3 pb-1 px-4 af ">Projects</div>
+            <div className="pt-3 pb-1 px-4 af ">Blog</div>
             <div
               className=" text-primary
                           bg-secondary
@@ -75,7 +75,7 @@ const Header = () => {
           </div>
 
           {/* Mobile View HamburgerMenu */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button type="button" onClick={handleHamburgerClick}>
               <GiHamburgerMenu className="w-6 h-6 text-secondary" />
             </button>
